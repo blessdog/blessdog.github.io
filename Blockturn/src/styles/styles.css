@@ -1,0 +1,117 @@
+body, html {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #345069;
+  overscroll-behaviour: contain;
+}
+html {
+  overflow: hidden;
+}
+body {
+  overflow: auto;
+}
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+h2 {
+  font-size: 21px;
+  line-height: 28px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.button {
+  display: inline-block;
+  position: relative;
+  color: #345069;
+  border: 0;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+* + .button {
+  margin-top: 20px;
+}
+.button-border {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border: 1px solid #345069;
+  border-radius: 3px;
+  opacity: 0.6;
+  transition: opacity 0.15s ease-in-out;
+}
+.button:hover .button-border {
+  border: 1px solid #345069;
+  opacity: 1;
+}
+#score {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  right: 25px;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 2px;
+}
+#start-screen, #end-screen, #touch {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+#touch {
+  z-index: 2;
+  display: none;
+  overscroll-behaviour: contain;
+}
+#end-screen {
+  z-index: 3;
+  display: none;
+}
+#start-screen {
+  z-index: 4;
+}
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #8bd9f2;
+  transition: opacity 0.8s ease-in-out 0.2s;
+}
+.inactive .background {
+  opacity: 0;
+}
+.active .background {
+  opacity: 0.8;
+}
+.screen-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease-in-out 1.2s;
+}
+.inactive .screen-content {
+  opacity: 0;
+}
+.active .screen-content {
+  opacity: 1;
+}

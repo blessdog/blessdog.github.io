@@ -1,0 +1,30 @@
+{
+  "name": "blocks",
+  "version": "0.0.1",
+  "description": "A blocks game",
+  "main": "src/index.js",
+  "homepage": "http://blockturnal.com",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "Thomas Cheng",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "4.17.11",
+    "three": "0.99.0"
+  },
+  "devDependencies": {
+    "gh-pages": "2.0.1",
+    "react-scripts": "2.1.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

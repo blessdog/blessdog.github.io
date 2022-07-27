@@ -1,0 +1,15 @@
+{
+  "short_name": "Blockturnal",
+  "name": "Blockturnal",
+  "icons": [
+    {
+      "src": "blockturnal-icon_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "fullscreen",
+  "theme_color": "#345069",
+  "background_color": "#8bd9f2"
+}
